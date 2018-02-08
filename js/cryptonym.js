@@ -1,6 +1,6 @@
 "use strict";
 
-let messenger = require("./messager");
+/* let messenger = require("./messager");
 let multiply = require("./multiply");
 let subtract = require("./subtract");
 
@@ -10,4 +10,4 @@ let Cryptonym = {
     multiply
 };
 
-module.exports = Cryptonym;
+module.exports = Cryptonym; */
