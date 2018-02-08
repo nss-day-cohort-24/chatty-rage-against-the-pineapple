@@ -24,21 +24,30 @@
 
     <div>
         <!-- Messager box -->
-        <form>
                 Write a message and hit enter to send:<br>
-                <input type="text" name="firstname" id="message-input"><br>
-                
-              </form> 
+                <input type="text" name="inputmessage" id="messageInput">
     </div>
     
+    <div id="parentDiv">
+        <p id="newOutputMsg"></p>
+    </div>
+
+    <div id="checkboxes">
+        <p>Dark Theme</p>
+        <!-- You can change the color to whatever color we want, i just chose this hex value from the darker blue on the styleguide -->
+        <input class="backgroundColorBox" type="checkbox" onclick="backgroundColor('#2c314f')">
+
+        <p>Large Text</p>
+        <!-- You can add whatever font size you'd like within the quotes of the fontSize function below -->
+        <input class="fontSizeBox" type="checkbox" onclick="fontSize('')"> 
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script src="dist/app.js"></script>
-    
-    
+   
 </body>
 </html>
 
