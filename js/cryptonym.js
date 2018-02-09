@@ -1,6 +1,6 @@
 "use strict";
 
-let messenger = require("./messager");
+let messager = require("./messager");
 let td = require("./td");
 let checkbox = require("./checkbox");
 let messages = require("./messages");
