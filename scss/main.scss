@@ -1,0 +1,86 @@
+// figure out bootstrap but entere some css for now
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* put into html:
+<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet"> */
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 55px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+
+#message-input {
+    
+}
+
+blockquote {
+    color: #7acdcf;
+}
+
+lg-button {
+    color: #7acdcf;
+    border-radius: 15px;
+}
+
+sm--button {
+    color: #7acdcf;
+    border-radius: 15px;
+}
+
+.navbar fixed-top navbar-light bg-light { 
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; // for now
+}
+
+.nav-item {
+    flex: 0 1 auto;
+    display: inline-flex;
+    padding: 7px;
+    border-radius: 15px;
+    margin: 0;
+    text-align: center;
+    width: 10%;
+    background-color:  #7acdcf;
+    color: white;
+}
+
+.nav-item:hover {
+    background-color: white;
+    border: #7acdcf;
+  }
+
+/* blues:
+darker blue: #2c314f;
+lighter blue is: #7acdcf;
+very light grey: #efeee9;
+grey: #aaaaaa;
+blackish/navy: #1b1d28;
+*/

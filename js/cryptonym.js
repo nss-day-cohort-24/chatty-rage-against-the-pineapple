@@ -12,4 +12,4 @@ let Cryptonym = {
     messages
 };
 
-module.exports = Cryptonym;
+module.exports = Cryptonym; 
