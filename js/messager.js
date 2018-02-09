@@ -5,6 +5,7 @@ let msgOutput = "";
 
 
 // when hit enter the message disappears
+function myMessager() {
     msgInput = document.getElementById("messageInput").value;
     document.getElementById("newOutputMsg").innerHTML += msgInput;
     
@@ -20,6 +21,6 @@ let msgOutput = "";
         }
 
     });
-                            
+ }                           
 
-module.exports = messager;
+module.exports = {myMessager};
