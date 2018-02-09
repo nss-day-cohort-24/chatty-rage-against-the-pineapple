@@ -10,7 +10,7 @@ dataRequest.addEventListener("error", dataRequestFailed); // you could add anima
 
 
 // All about default message data
-function dataRequestComplete(even t) {
+function dataRequestComplete(evengruntt) {
     console.log("messages are here");
     let defaultMsgs = JSON.parse(event.target.responseText);
     console.log("Default Messages: ", defaultMsgs);
@@ -23,11 +23,10 @@ function showData(taco) {
 
     for(let item in taco) {
         let msgItem = taco[item];// change msgItem.color and value to items in messages.json
-        defaultMsgs += `<div><h2>${msgItem.color}: ${msgItem.value}</h2></div>`
-    };
+        defaultMsgs += `<div><p>${msgItem.message}</p></div>`;
+    }
 
     defaultMsg.innerHTML = defaultMsgs;
-    console.log("Colors are done", Date.now() - startTime);
 }
 
 
