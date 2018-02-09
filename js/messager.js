@@ -10,6 +10,7 @@ let msgOutput = "";
     
     document.addEventListener("keypress", (e) => {
         var key = e.key;
+            console.log("Is the key Enter pressed? ", key);
 
         if (key == "Enter") {
             document.getElementById("newOutputMsg").innerHTML += `<p id="newOutputMsg">${msgInput}</p>`;//adds each message to the msgBoard
