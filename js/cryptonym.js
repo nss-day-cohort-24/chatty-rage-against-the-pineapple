@@ -1,13 +1,15 @@
 "use strict";
 
 let messenger = require("./messager");
-let multiply = require("./multiply");
-let subtract = require("./subtract");
+let td = require("./td");
+let checkbox = require("./checkbox");
+let messages = require("./messages");
 
 let Cryptonym = {
-    adding,
-    subtract,
-    multiply
+    messager,
+    td,
+    checkbox,
+    messages
 };
 
 module.exports = Cryptonym;
