@@ -16,7 +16,7 @@ let msgOutput = "";
             document.getElementById("messageInput").value = "";
         } else {
             msgInput = document.getElementById("messageInput").value;
-        };
+        }
 
     });
                             
