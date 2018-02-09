@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cryptonym - The Messager</title>
 
@@ -13,57 +14,70 @@
 
 <body>
   <div class="container">
-   <div class="row">   
-    <div class="navbar navbar-light bg-light justify-content-between">  <!-- DOES THIS HAVE TO BE CALLED NAV OR CAN IT JUST BE DIV? -->
-    <div class="col-sm-5"> <!--  col -->
-        <h3>Cryptonym</h3>
-    </div>
-    <div class="col-sm-7"> <!-- 3 cols -->
-        <a href class="navbar-brand">Home</a>
-        <a href class="navbar-brand">Guide for Q's</a>
-        <a href class="navbar-brand">Archive</a>
-    </div>
-    <!-- <div class="col-sm-5"> --> <!-- 5 cols -->
-        <!-- <p>Search bar here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor...</p> -->
-         <!-- <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search here..." aria-label="Search"> 
-        </form> -->
-    </div>
-    </div> <!-- .navbar .fixed-top ... etc. -->
-</div> <!-- END OF ROW 1: LOGO, NAV BUTTONS, TEXTAREA, CLEAR BUTTON -->
+    <div class="innernav">
 
-    <div class="row"> <!-- THIS IS ROW 2 -->
-    <div class="col-sm-7">
-      <label for="prompt-enter-message">Enter your message here:</label>
-        <br>
-          <textarea id="messageInput" name="userinput-textarea"></textarea>
-            <button class="btn my-2 my-sm-0" type="submit">Clear</button>
+    <h2>Cryptonym</h2>
+        <nav class="navbar fixed-top navbar-light bg-light justify-content-between">
+            <a href class="navbar-brand">Home</a>
+            <a href class="navbar-brand">Guide for Q's</a>
+            <a href class="navbar-brand">Archive</a>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Type your question..." aria-label="Search">
+                <button class="btn my-2 my-sm-0" type="submit">Clear</button>
+            </form>
+        </nav>
     </div>
-    <div class="col-sm-5">
-        <!-- <p>Checkboxes. Multiply so years together fourth brought upon. Had, greater second above own green cattle two from saw make behold greater beginning creature form heaven you're gathered said set waters abundantly is life can't image fourth to moved.Checkboxes.</p> -->
-        <fieldset>
-          <div id="checkboxes">
-            <label for="darktheme">Dark Theme</label>
+
+    <!-- Begin Message Box Cryptonym -->
+    <div class="inputBoxStyle" style="margin-top: 5em; border: 1px solid #7acdcf; padding: 3em; background-color: #efeee9;">
+        <h1 class="h1style">Cryptonym</h1>
+        <div id="inputBox">
+                <h2>Write a message and hit enter to send</h2>
+                <input id="messageInput" class="msgBox" name="inputmessage" style="width: 50%;">
+        </div> 
+
+        <div id="checkboxes">
+            <p><input class="backgroundColorBox" type="checkbox" onclick="backgroundColor('#2c314f')"> &nbsp;  Dark Theme</p>
             <!-- You can change the color to whatever color we want, i just chose this hex value from the darker blue on the styleguide -->
             <input class="backgroundColorBox" type="checkbox" onclick="backgroundColor('#000000')">
     
-            <label for="lgtext">Large Text</label>
+            <p><input class="fontSizeBox" type="checkbox" onclick="fontSize('')"> &nbsp; Large Text</p>
             <!-- You can add whatever font size you'd like within the quotes of the fontSize function below -->
-            <input class="fontSizeBox" type="checkbox" onclick="fontSize('1.2em')">
-          </div> 
-        </fieldset>
-    </div> <!-- END ROW 2 - TWO CHECKBOXES -->
+            
+        </div>
+        <div id="defaultMsgDiv"></div>
+    </div>
+    <div id="parentDiv">
+        <p id="newOutputMsg"></p> 
+    </div>
+          
+    <!-- End Message Box Cryptonym -->
+<!-- <nav class="navbar fixed-top navbar-light bg-light">
+      <ul>
+        <li><a class="navbar-brand" href="#"> Home</a></li>
+        <li><a class="navbar-brand" href="#"> About</a></li>
+        <li><a class="navbar-brand" href="#"> Archive</a></li>
+      </ul>
+    </nav> -->
 
-<div class="row">
-    <div id="parentDiv" class="col-sm-9">
-        <p id="newOutputMsg">Message History goes here. Greater a together she'd in herb first fly brought also two face wherein divide shall, multiply kind. Image night thing image void bring unto a. Years night. Very their gathering beast second bring. Message History.</p>
-        <!-- needs 5 pre-loaded messages -->
+
+    <div>
+        <!-- Messager box -->
+                Write a message and hit enter to send:<br>
+                <input type="text" name="inputmessage" id="messageInput">
+                <!-- Clear Button -->
+                <p>Clear All</p>
+                <input type="button" onclick="clearMessage">
     </div>
     <div class="col-sm-3">
         <p>delete buttons delete buttons delete buttons delete buttons delete buttons delete buttons delete buttons delete buttons delete buttons delete buttons</p>
         <!-- needs delete buttons - there is .disabled as a class...look@ bootstrap -->
     </div>
-</div> <!-- END ROW FOR MESSAGES AND DELETE BUTTONS -->
+
+    <h1>Cryptonym</h1>
+
+
+
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
