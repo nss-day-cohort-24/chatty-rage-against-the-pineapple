@@ -1,3 +1,5 @@
+"use strict";
+
 function removeElement(parentDiv, childDiv) {
     if (childDiv == parentDiv) {
         alert("The parent should not be deleted..");
