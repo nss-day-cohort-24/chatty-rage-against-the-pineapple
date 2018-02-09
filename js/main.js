@@ -2,9 +2,6 @@
 
 console.log("main js is in the house");
 
-// the XHR code goes here
-
-
 
 let dataRequest = new XMLHttpRequest();
 
@@ -42,6 +39,5 @@ dataRequest.open("GET", "messages.json");
 dataRequest.send();
 
 //*/
-
 
 let CryptonymBox = require("./cryptonym");
