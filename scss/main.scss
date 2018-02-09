@@ -1,7 +1,12 @@
-// figure out bootstrap but entere some css for now
+// figure out bootstrap but enter some css for now
 
 body {
   font-family: 'Lato', sans-serif;
+  background-color: red;
+}
+
+#checkboxes {
+    margin-top: 100px;
 }
 
 /* put into html:
@@ -33,7 +38,7 @@ h4 {
 }
 
 
-#message-input {
+#messageInput {
     
 }
 
@@ -46,33 +51,25 @@ lg-button {
     border-radius: 15px;
 }
 
-sm--button {
+sm-button {
     color: #7acdcf;
     border-radius: 15px;
 }
 
-.navbar fixed-top navbar-light bg-light { 
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%; // for now
+/* .innernav { 
+   width: 100%; 
+} */
+
+.btn {
+    background-color: #2c314f !important;
 }
 
-.nav-item {
-    flex: 0 1 auto;
-    display: inline-flex;
-    padding: 7px;
-    border-radius: 15px;
-    margin: 0;
-    text-align: center;
-    width: 10%;
-    background-color:  #7acdcf;
+.navbar-brand {
+    background-color:  #2c314f;
     color: white;
 }
 
-.nav-item:hover {
+.navbar-brand:hover {
     background-color: white;
     border: #7acdcf;
   }

@@ -10,17 +10,41 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
 </head>
+
 <body>
-    <nav>
+  <div class="container">
+   <div class="innernav">
+    <nav class="navbar fixed-top navbar-light bg-light justify-content-between">
+        <a href class="navbar-brand">Home</a>
+        <a href class="navbar-brand">Guide for Q's</a>
+        <a href class="navbar-brand">Archive</a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Type your question..." aria-label="Search">
+            <button class="btn my-2 my-sm-0" type="submit">Clear</button>
+        </form>
+    </div>
 
-            <nav class="navbar fixed-top navbar-light bg-light">
-                    <a class="navbar-brand" href="#">Fixed top</a>
-            </nav>
+        <div id="checkboxes">
+            <p>Dark Theme</p>
+            <!-- You can change the color to whatever color we want, i just chose this hex value from the darker blue on the styleguide -->
+            <input class="backgroundColorBox" type="checkbox" onclick="backgroundColor('#2c314f')">
+    
+            <p>Large Text</p>
+            <!-- You can add whatever font size you'd like within the quotes of the fontSize function below -->
+            <input class="fontSizeBox" type="checkbox" onclick="fontSize('')"> 
+            </div>
+        </nav>
 
-        <ul>
-            <li><a href="#">Cryptonym</a></li>
-        </ul>
-    </nav>
+        
+          
+<!-- <nav class="navbar fixed-top navbar-light bg-light">
+      <ul>
+        <li><a class="navbar-brand" href="#"> Home</a></li>
+        <li><a class="navbar-brand" href="#"> About</a></li>
+        <li><a class="navbar-brand" href="#"> Archive</a></li>
+      </ul>
+    </nav> -->
+
 
     <div>
         <!-- Messager box -->
@@ -35,22 +59,26 @@
         <p id="newOutputMsg"></p>
     </div>
 
-    <div id="checkboxes">
-        <p>Dark Theme</p>
-        <!-- You can change the color to whatever color we want, i just chose this hex value from the darker blue on the styleguide -->
-        <input class="backgroundColorBox" type="checkbox" onclick="backgroundColor('#2c314f')">
+    <h1>Cryptonym</h1>
 
-        <p>Large Text</p>
-        <!-- You can add whatever font size you'd like within the quotes of the fontSize function below -->
-        <input class="fontSizeBox" type="checkbox" onclick="fontSize('')"> 
-    </div>
+
+<!-- <div>
+        <h2>Write a message and hit enter to send</h2>
+        <br>
+        <textarea id="message" name="inputmessage"></textarea>
+    </div> 
+
+            <!-- <div id="parentDiv">
+        <p id="newOutputMsg"></p>
+    </div> -->
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script src="dist/app.js"></script>
-   
+  </div> <!--bootstrap "container-fluid" -->
 </body>
 </html>
 

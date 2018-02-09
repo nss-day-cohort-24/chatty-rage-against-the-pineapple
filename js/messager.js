@@ -1,27 +1,24 @@
 "use strict";
 
-
-var msgInput = document.getElementById("message-input").addEventListener("keypress", 13).value;
-console.log("input message is: ", msgInput);
-
+let msgInput = "";
+let msgOutput = "";
 
 
-function myInput() {
-    msgInput = document.getElementById("new-output-msg").innerHTML;
-}
+// when hit enter the message disappears
+    msgInput = document.getElementById("messageInput").value;
+    document.getElementById("newOutputMsg").innerHTML += msgInput;
+    
+    document.addEventListener("keypress", (e) => {
+        var key = e.key;
 
-/*
-var msgOutput = 
-msgInput = document.getElementById("new-output-msg").innerHTML;
+        if (key == "Enter") {
+            document.getElementById("newOutputMsg").innerHTML += `<p id="newOutputMsg">${msgInput}</p>`;//adds each message to the msgBoard
+            document.getElementById("messageInput").value = "";
+        } else {
+            msgInput = document.getElementById("messageInput").value;
+        }
 
+    });
+                            
 
-document.getElementById("demo").addEventListener("keypress", myInput);
-
-function userMsg() {
-    var x = document.getElementById("inputMsg").innerHTML;
-    document.getElementById("outputMsg").innerHTML = x;
-}
-
-*/
-
-//module.exports = messager;
+module.exports = messager;
