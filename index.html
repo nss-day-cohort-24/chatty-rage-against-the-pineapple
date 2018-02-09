@@ -12,31 +12,54 @@
 </head>
 
 <body>
-  <div class="container">
-   <div class="row">   
+  <div class="container mt-10">
+
+        <div class="innernav">
+          <nav class="navbar fixed-top navbar-light bg-light justify-content-between">
+            <a href class="navbar-brand">Home</a>
+            <a href class="navbar-brand">Guide for Q's</a>
+            <a href class="navbar-brand">Archive</a>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search question archive" aria-label="Search">
+                <button class="btn my-2 my-sm-0" type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="innernav-invisible">
+                <nav class="navbar fixed-top navbar-light bg-light justify-content-between">
+                  <a href class="navbar-brand">Home</a>
+                  <a href class="navbar-brand">Guide for Q's</a>
+                  <a href class="navbar-brand">Archive</a>
+                  <form class="form-inline">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Search question archive" aria-label="Search">
+                      <button class="btn my-2 my-sm-0" type="submit">Submit</button>
+                  </form>
+        </div>
+
+   <!-- <div class="row">   
     <div class="navbar navbar-light bg-light justify-content-between">  <!-- DOES THIS HAVE TO BE CALLED NAV OR CAN IT JUST BE DIV? -->
-    <div class="col-sm-5"> <!--  col -->
+    <!-- <div class="col-sm-5"> 
         <h3>Cryptonym</h3>
     </div>
-    <div class="col-sm-7"> <!-- 3 cols -->
-        <a href class="navbar-brand">Home</a>
+    <div class="col-sm-7"> 3 cols -->
+        <!-- <a href class="navbar-brand">Home</a>
         <a href class="navbar-brand">Guide for Q's</a>
-        <a href class="navbar-brand">Archive</a>
-    </div>
+        <a href class="navbar-brand">Archive</a> 
+    </div> -->
     <!-- <div class="col-sm-5"> --> <!-- 5 cols -->
         <!-- <p>Search bar here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor...</p> -->
          <!-- <form class="form-inline">
             <input class="form-control mr-sm-2" type="search" placeholder="Search here..." aria-label="Search"> 
-        </form> -->
-    </div>
-    </div> <!-- .navbar .fixed-top ... etc. -->
-</div> <!-- END OF ROW 1: LOGO, NAV BUTTONS, TEXTAREA, CLEAR BUTTON -->
+        </form> 
+    </div> 
+    </div> .navbar .fixed-top ... etc. 
+</div>  END OF ROW 1: LOGO, NAV BUTTONS, TEXTAREA, CLEAR BUTTON -->
 
-    <div class="row"> <!-- THIS IS ROW 2 -->
-    <div class="col-sm-7">
+    <div class="row"> <!-- THIS IS ROW 1 -->
+    <div class="col-sm-7 ml-5">
       <label for="prompt-enter-message">Enter your message here:</label>
         <br>
-          <textarea id="messageInput" name="userinput-textarea"></textarea>
+          <textarea id="messageInput" name="userinput-textarea" cols="50"></textarea>
             <button class="btn my-2 my-sm-0" type="submit">Clear</button>
     </div>
     <div class="col-sm-5">
@@ -56,6 +79,7 @@
 
 <div class="row">
     <div id="parentDiv" class="col-sm-9">
+      <h4>New Messages</h4>
         <p id="newOutputMsg">Message History goes here. Greater a together she'd in herb first fly brought also two face wherein divide shall, multiply kind. Image night thing image void bring unto a. Years night. Very their gathering beast second bring. Message History.</p>
         <!-- needs 5 pre-loaded messages -->
     </div>
@@ -63,6 +87,10 @@
         <p>delete buttons delete buttons delete buttons delete buttons delete buttons delete buttons delete buttons delete buttons delete buttons delete buttons</p>
         <!-- needs delete buttons - there is .disabled as a class...look@ bootstrap -->
     </div>
+    <div id="defaultMsgDiv">
+      
+    </div>
+
 </div> <!-- END ROW FOR MESSAGES AND DELETE BUTTONS -->
 
 
