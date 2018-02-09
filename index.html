@@ -23,7 +23,7 @@
         <a href class="navbar-brand">Guide for Q's</a>
         <a href class="navbar-brand">Archive</a>
     </div>
-    <!-- <div class="col-sm-5"> <!-- 5 cols -->
+    <!-- <div class="col-sm-5"> --> <!-- 5 cols -->
         <!-- <p>Search bar here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor...</p> -->
          <!-- <form class="form-inline">
             <input class="form-control mr-sm-2" type="search" placeholder="Search here..." aria-label="Search"> 
@@ -36,7 +36,7 @@
     <div class="col-sm-7">
       <label for="prompt-enter-message">Enter your message here:</label>
         <br>
-          <textarea id="whateverHadensIdIs" name="userinput-textarea"></textarea>
+          <textarea id="messageInput" name="userinput-textarea"></textarea>
             <button class="btn my-2 my-sm-0" type="submit">Clear</button>
     </div>
     <div class="col-sm-5">
@@ -45,7 +45,7 @@
           <div id="checkboxes">
             <label for="darktheme">Dark Theme</label>
             <!-- You can change the color to whatever color we want, i just chose this hex value from the darker blue on the styleguide -->
-            <input class="backgroundColorBox" type="checkbox" onclick="backgroundColor('#2c314f')">
+            <input class="backgroundColorBox" type="checkbox" onclick="backgroundColor('#000000')">
     
             <label for="lgtext">Large Text</label>
             <!-- You can add whatever font size you'd like within the quotes of the fontSize function below -->
@@ -55,8 +55,8 @@
     </div> <!-- END ROW 2 - TWO CHECKBOXES -->
 
 <div class="row">
-    <div class="col-sm-9">
-        <p>Message History goes here. Greater a together she'd in herb first fly brought also two face wherein divide shall, multiply kind. Image night thing image void bring unto a. Years night. Very their gathering beast second bring. Message History.</p>
+    <div id="parentDiv" class="col-sm-9">
+        <p id="newOutputMsg">Message History goes here. Greater a together she'd in herb first fly brought also two face wherein divide shall, multiply kind. Image night thing image void bring unto a. Years night. Very their gathering beast second bring. Message History.</p>
         <!-- needs 5 pre-loaded messages -->
     </div>
     <div class="col-sm-3">

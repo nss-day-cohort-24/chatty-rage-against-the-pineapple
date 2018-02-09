@@ -8,4 +8,8 @@ function fontSize(font) {
     document.body.style.fontSize = font;
 }
 
- module.exports = {backgroundColor, fontSize};
+function clearMessage() {
+    document.getElementById("messageInput").value = "";
+}
+
+ module.exports = {backgroundColor, fontSize, clearMessage};

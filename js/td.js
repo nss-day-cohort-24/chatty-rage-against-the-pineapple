@@ -1,6 +1,8 @@
+"use strict";
+
 function removeElement(parentDiv, childDiv) {
     if (childDiv == parentDiv) {
-        alert("The parent should not be deleted..");
+        console.log("The parent should not be deleted.");
     }
     else if (document.getElementById(childDiv)) {
         var child = document.getElementById(childDiv);
@@ -8,24 +10,22 @@ function removeElement(parentDiv, childDiv) {
         parent.removeChild(child);
     }
     else {
-        alert("Already deleted.");
+        console.log("Already deleted.");
         return false;
     }
 }
 
 // console.log("Hello");
-
 // // function removeDummy () {
 // //     var elem = document.getElementById("myDiv");
 // //     elem.parentNode.removeChild(elem);   
 // //     return false;
 // // };
-
 // var btn = document.getElementById('btn');
 // console.log(btn);
-
 // btn.onclick = function myButton() {
 //     document.getElementById('txt').remove();
 //     this.remove();
 // };
 
+module.exports = removeElement;
