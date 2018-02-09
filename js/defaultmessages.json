@@ -1,23 +1,23 @@
 [
     {
-        "message": "Hey did you ever get that app working that you said would make you millions?"
+        "message1": "Hey did you ever get that app working that you said would make you millions?"
     },
     {
-        "message": "Well, it's coming along but I'm not quite there yet"
+        "message2": "Well, it's coming along but I'm not quite there yet"
     },
     {
-        "message": "What was your idea again? I kinda remember it but not entirely"
+        "message3": "What was your idea again? I kinda remember it but not entirely"
     },
     {
-        "message": "It's going to be this revolutionary new chat engine that puts iMessage and Facebook Messenger to shame"
+        "message4": "It's going to be this revolutionary new chat engine that puts iMessage and Facebook Messenger to shame"
     },
     {
-        "message": "Oh wow yeah now I remember, but weren't you working on that in your little code bootcamp or whatever you went to a couple years ago?"
+        "message5": "Oh wow yeah now I remember, but weren't you working on that in your little code bootcamp or whatever you went to a couple years ago?"
     },
     {
-        "message": "Yeah it's taking a little longer than I thought it would. Started out as group project but they all ditched me after a couple weeks."
+        "message6": "Yeah it's taking a little longer than I thought it would. Started out as group project but they all ditched me after a couple weeks."
     },
     {
-        "message": "Oh boy."
+        "message7": "Oh boy."
     }
 ]
