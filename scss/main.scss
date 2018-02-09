@@ -38,10 +38,6 @@ h4 {
 }
 
 
-#messageInput {
-    
-}
-
 blockquote {
     color: #7acdcf;
 }
@@ -81,3 +77,25 @@ very light grey: #efeee9;
 grey: #aaaaaa;
 blackish/navy: #1b1d28;
 */
+
+/* Begin Sandy's SCSS */
+
+.fixed-top {
+    z-index: -1030;
+}
+
+.h1style {
+    background-color: #7acdcf;
+    line-height: 3em;
+    text-transform: uppercase;
+    color: #2c314f;
+    text-align: center;
+}
+.inputBoxStyle {    
+    margin-top: 5em;
+    border: 1px solid #7acdcf;
+    padding: 3em;
+    background-color: #efeee9;
+}
+
+/* End Sandy's CSS */
