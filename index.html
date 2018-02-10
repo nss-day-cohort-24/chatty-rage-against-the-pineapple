@@ -36,12 +36,12 @@
             <input id="messageInput" class="msgBox" name="inputmessage" style="width: 50%;">
         </div> 
 
-        <div id="checkboxes">
-            <p class="checkbox-area"><input class="backgroundColorBox" type="checkbox" onclick="backgroundColor('#2c314f')"> &nbsp;  Dark Theme</p>
+        <div class="checkbox" id="checkboxes">
+            <label class="checkbox-inline checkbox-area"><input class="backgroundColorBox" type="checkbox" onclick="backgroundColor('#2c314f')"> &nbsp;  Dark Theme</label>
             <!-- You can change the color to whatever color we want, i just chose this hex value from the darker blue on the styleguide -->
             <!-- <input class="backgroundColorBox" type="checkbox" onclick="backgroundColor('#000000')"> -->
 
-            <p class="mb-4 checkbox-area"><input class="fontSizeBox" type="checkbox" onclick="fontSize('')"> &nbsp; Large Text</p>
+            <label class="checkbox-inline mb-4 checkbox-area"><input class="fontSizeBox" type="checkbox" onclick="fontSize('')"> &nbsp; Large Text</label>
             <!-- You can add whatever font size you'd like within the quotes of the fontSize function below -->
         </div>  <!-- end of #checkboxes div -->
 
@@ -50,7 +50,7 @@
         </div>
     </div> <!-- end of .inputBoxStyle div -->
 
-    <div class="message-history-area"></div>
+    <div class="message-history-area">
       <h3>Message history:</h3>
         <div class="row">
             <div id="parentDiv" class="col-sm-9">
@@ -58,7 +58,7 @@
             <!-- needs 5 pre-loaded messages -->
             </div>
             <div class="col-sm-3">
-              <a href class="navbar-brand delete-button" onclick="#">Delete</a>
+              <a href class="navbar-brand delete-button" onclick="needsC;assHere">Delete</a>
                 </div>
             <!-- needs actual buttons - there is .disabled as a class in bootstrap -->
             </div>
