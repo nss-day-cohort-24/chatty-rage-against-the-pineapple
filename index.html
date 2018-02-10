@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cryptonym - The Messager</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
+
     <link href="lib/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
@@ -15,37 +17,57 @@
 <body>
   <div class="container">
     <div class="innernav">
-
-    <h2>Cryptonym</h2>
-        <nav class="navbar fixed-top navbar-light bg-light justify-content-between">
+        <nav class="navbar fixed-top bg-light justify-content-between">
             <a href class="navbar-brand">Home</a>
             <a href class="navbar-brand">Guide for Q's</a>
             <a href class="navbar-brand">Archive</a>
             <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Type your question..." aria-label="Search">
-                <button class="btn my-2 my-sm-0" type="submit">Clear</button>
+                <input class="form-control mr-sm-2" type="search" placeholder="Search archives..." aria-label="Search">
+                <button class="navbar-brand" type="submit">Search</button>
             </form>
         </nav>
     </div>
 
     <!-- Begin Message Box Cryptonym -->
-    <div class="inputBoxStyle" style="margin-top: 5em; border: 1px solid #7acdcf; padding: 3em; background-color: #efeee9;">
-        <h1 class="h1style">Cryptonym</h1>
+    <div class="inputBoxStyle">
+        <h1 class="mb-4 h1style">Cryptonym</h1> <!-- bootstrap classes appear to have to precede self-made ones -->
         <div id="inputBox">
-                <h2>Write a message and hit enter to send</h2>
-                <input id="messageInput" class="msgBox" name="inputmessage" style="width: 50%;">
+            <h3>Write your message and hit enter to send:</h3>
+            <input id="messageInput" class="msgBox" name="inputmessage" style="width: 50%;">
         </div> 
 
         <div id="checkboxes">
-            <p><input class="backgroundColorBox" type="checkbox" onclick="backgroundColor('#2c314f')"> &nbsp;  Dark Theme</p>
+            <p class="checkbox-area"><input class="backgroundColorBox" type="checkbox" onclick="backgroundColor('#2c314f')"> &nbsp;  Dark Theme</p>
             <!-- You can change the color to whatever color we want, i just chose this hex value from the darker blue on the styleguide -->
-            <input class="backgroundColorBox" type="checkbox" onclick="backgroundColor('#000000')">
-    
-            <p><input class="fontSizeBox" type="checkbox" onclick="fontSize('')"> &nbsp; Large Text</p>
+            <!-- <input class="backgroundColorBox" type="checkbox" onclick="backgroundColor('#000000')"> -->
+
+            <p class="mb-4 checkbox-area"><input class="fontSizeBox" type="checkbox" onclick="fontSize('')"> &nbsp; Large Text</p>
             <!-- You can add whatever font size you'd like within the quotes of the fontSize function below -->
-            
+        </div>  <!-- end of #checkboxes div -->
+
+        <div>
+          <a href class="navbar-brand" onclick="clearMessage">Clear</a>
         </div>
-        <div id="defaultMsgDiv"></div>
+    </div> <!-- end of .inputBoxStyle div -->
+
+    <div class="message-history-area"></div>
+      <h3>Message history:</h3>
+        <div class="row">
+            <div id="parentDiv" class="col-sm-9">
+            <p id="newOutputMsg">Here is an output message. It's the newest one.</p>
+            <!-- needs 5 pre-loaded messages -->
+            </div>
+            <div class="col-sm-3">
+              <a href class="navbar-brand delete-button" onclick="#">Delete</a>
+                </div>
+            <!-- needs actual buttons - there is .disabled as a class in bootstrap -->
+            </div>
+        </div>
+    </div> <!-- end of message-history-area -->
+          
+<!-- divs to use for messages history section beneath input box -->
+
+<!-- classes for JS messages history. not deleting these yet but i did use them above -AZ.<div id="defaultMsgDiv"></div>
     </div>
     <div id="parentDiv">
         <p id="newOutputMsg"></p> 
@@ -60,32 +82,25 @@
       </ul>
     </nav> -->
 
-
-    <div>
         <!-- Messager box -->
-                Write a message and hit enter to send:<br>
+                <!-- Write a message and hit enter to send:<br>
                 <input type="text" name="inputmessage" id="messageInput">
-                <!-- Clear Button -->
-                <p>Clear All</p>
-                <input type="button" onclick="clearMessage">
-    </div>
-    <div class="col-sm-3">
+                 Clear Button -->
+                <!-- <p>Clear All</p>
+                <input type="button" onclick="clearMessage"> -->
+    
+
+    <!-- <div class="col-sm-3">
         <p>delete buttons delete buttons delete buttons delete buttons delete buttons delete buttons delete buttons delete buttons delete buttons delete buttons</p>
-        <!-- needs delete buttons - there is .disabled as a class...look@ bootstrap -->
-    </div>
-
-    <h1>Cryptonym</h1>
-
-
-
-
+        <!-- needs delete buttons - there is .disabled as a class...look@ bootstrap
+    </div> -->
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script src="dist/app.js"></script>
-  </div> <!--bootstrap "container-fluid" -->
+  </div> <!--bootstrap "container" -->
 </body>
 </html>
 
