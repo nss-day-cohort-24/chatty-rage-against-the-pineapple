@@ -3,13 +3,13 @@
 let messager = require("./messager");
 let td = require("./td");
 let checkbox = require("./checkbox");
-//let messages = require("./messages");
+let defaultMsgs = require("./defaultMsgs");
 
 let Cryptonym = {
     messager,
     td,
-    checkbox
-    //messages
+    checkbox,
+    defaultMsgs
 };
 
-module.exports = {Cryptonym}; 
+module.exports = Cryptonym; 
