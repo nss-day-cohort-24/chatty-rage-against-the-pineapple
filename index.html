@@ -38,10 +38,19 @@
 
         <div class="checkbox" id="checkboxes">
             <label class="checkbox-inline checkbox-area"><input class="backgroundColorBox" type="checkbox" onclick="backgroundColor('#2c314f')"> &nbsp;  Dark Theme</label>
+            <script>
+            function backgroundColor(color) {
+                document.body.style.background = color;
+             }</script>
             <!-- You can change the color to whatever color we want, i just chose this hex value from the darker blue on the styleguide -->
             <!-- <input class="backgroundColorBox" type="checkbox" onclick="backgroundColor('#000000')"> -->
 
-            <label class="checkbox-inline mb-4 checkbox-area"><input class="fontSizeBox" type="checkbox" onclick="fontSize('')"> &nbsp; Large Text</label>
+            <label class="checkbox-inline mb-4 checkbox-area"><input class="fontSizeBox" type="checkbox" onclick="fontSize('30px')"> &nbsp; Large Text</label>
+            <script>
+            function fontSize(font) {
+    document.body.style.fontSize = font;
+}
+            </script>
             <!-- You can add whatever font size you'd like within the quotes of the fontSize function below -->
         </div>  <!-- end of #checkboxes div -->
 
