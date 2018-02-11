@@ -1,7 +1,7 @@
 "use strict";
 
 function clearMessage() {
-    document.getElementById("messageInput").value = "";
+    document.getElementById("parentDiv").value = "";
 }
 
 module.exports = clearMessage;
