@@ -2,13 +2,17 @@
 
 let messager = require("./messager");
 let td = require("./td");
-let checkbox = require("./checkbox");
+let backgroundColor = require("./backgroundcolor");
+let fontSize = require("./fontsize");
+let clearMessage = require("./clearbutton");
 let defaultMsgs = require("./defaultMsgs");
 
 let Cryptonym = {
     messager,
     td,
-    checkbox,
+    backgroundColor,
+    fontSize,
+    clearMessage,
     defaultMsgs
 };
 
