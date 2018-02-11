@@ -6,6 +6,7 @@ let backgroundColor = require("./backgroundcolor");
 let fontSize = require("./fontsize");
 let clearMessage = require("./clearbutton");
 let defaultMsgs = require("./defaultMsgs");
+let resetMsgs = require("./reset");
 
 let Cryptonym = {
     messager,
@@ -13,7 +14,8 @@ let Cryptonym = {
     backgroundColor,
     fontSize,
     clearMessage,
-    defaultMsgs
+    defaultMsgs,
+    resetMsgs
 };
 
 module.exports = Cryptonym; 
