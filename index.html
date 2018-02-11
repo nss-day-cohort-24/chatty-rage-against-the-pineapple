@@ -40,9 +40,10 @@
             <label class="checkbox-inline checkbox-area"><input class="backgroundColorBox" type="checkbox" onclick="backgroundColor('#2c314f')"> &nbsp;  Dark Theme</label>
             
             <!-- You can change the color to whatever color we want, i just chose this hex value from the darker blue on the styleguide -->
+            
             <!-- <input class="backgroundColorBox" type="checkbox" onclick="backgroundColor('#000000')"> -->
-
-            <label class="checkbox-inline mb-4 checkbox-area"><input class="fontSizeBox" type="checkbox" onclick="fontSize('30px')"> &nbsp; Large Text</label>
+            <label class="checkbox-inline mb-4 checkbox-area">
+                <input class="fontSizeBox" type="checkbox" onclick="fontSize('30px')"> &nbsp; Large Text</label>
            
             <!-- You can add whatever font size you'd like within the quotes of the fontSize function below -->
         </div>  <!-- end of #checkboxes div -->
@@ -59,13 +60,14 @@
                     <input type="button" onclick="myReset()" value="Reset form">
                 </form>
                 <div id="parentDiv" class="col-sm-9">
-                <p id="newOutputMsg">Here is an output message. It's the newest one.</p>
+                    <p id="newOutputMsg">Here is an output message. It's the newest one.</p>
                 <!-- needs 5 pre-loaded messages -->
                 </div>
                 <div class="col-sm-3">
-                <a href class="navbar-brand delete-button" onclick="needsC;assHere">Delete</a>
+                    <a href class="navbar-brand delete-button" onclick="needsClassHere">Delete</a>
                 </div>
                 <!-- needs actual buttons - there is .disabled as a class in bootstrap -->
+                
                 <!-- divs to use for messages history section beneath input box -->
                 <div id="defaultMsgDiv"></div>
             </div>
@@ -77,11 +79,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <script src="dist/app.js"></script> <script>
+    <script src="dist/app.js"></script> 
+        <script>
             function fontSize(font) {
-    document.body.style.fontSize = font;
-}
+                document.body.style.fontSize = font;
+            }
             </script>
+
             <script>
             function backgroundColor(color) {
                 document.body.style.background = color;
