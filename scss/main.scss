@@ -23,6 +23,7 @@ body {
 
 .checkbox-area {
     margin: 10px 20px;
+    font-size: 1.2rem;
 }
 
 /* put into html 2/10 sat:
@@ -30,17 +31,17 @@ body {
 
 h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 70px;
+    font-size: 55px;
 }
 
 h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 55px;
+    font-size: 40px;
 }
 
 h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
+    font-size: 24px;
 }
 
 h4 {
@@ -50,16 +51,18 @@ h4 {
 
 .navbar-brand {
     background-color:  #7acdcf;
+    border:  #7acdcf;
     color: white; // wasn't working + then i tested the bootstrap classes written in the html and took one out
     font-size: 1rem; 
-    padding: 8px 18px;
-    border-radius: 35%;
-    font-family: 'Montserrat', sans-serif;
+    padding: 8px 55px;
+    border-radius: 40%;
+    font-family: 'Montserrat' !important;
 }
 
 .navbar-brand:hover {
     background-color: white;
-    border: #7acdcf;
+    border: 1px solid #7acdcf;
+    color: #7acdcf;
   }
 
 .message-history-area {    
@@ -75,10 +78,21 @@ h4 {
 
 .delete-button {
     background-color: #2c314f;
+    border: #2c314f;
     color: white; // wasn't working + then i tested the bootstrap classes written in the html and took one out
     font-size: 1rem; 
-    padding: 8px 18px;
-    border-radius: 35%;
+    padding: 8px 55px;
+    border-radius: 40%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.delete-button:hover {
+    background-color: white;
+    border: 1px solid #2c314f;
+    color: #2c314f; // wasn't working + then i tested the bootstrap classes written in the html and took one out
+    font-size: 1rem; 
+    padding: 8px 55px;
+    border-radius: 40%;
     font-family: 'Montserrat', sans-serif;
 }
 
