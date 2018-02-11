@@ -28,13 +28,16 @@ function showData(taco) {
 
     for(let item in taco) {
         let msgItem = taco[item];
+        console.log("Check what is showing in msgItem", msgItem);
         // change msgItem.color and value to items in messages.json
 
         defaultMsgs += `<div><p>${msgItem.message}</p></div>`;
-    }
-
-    defaultMsgDiv.innerHTML = defaultMsgs;
     
+    console.log("Let's see what defaultMsgs show: ", defaultMsgs);
+
+    //document.getElementById("defaultMsgDiv").innerHTML = defaultMsgs;
+    defaultMsgDiv.innerHTML = defaultMsgs;
+    }
 }
 
 
@@ -46,4 +49,4 @@ dataRequest.open("GET", "messages.json");
 dataRequest.send();
 
 // add the correct function names.
-module.exports = {dataRequestComplete, showData, dataRequestFailed};
+module.exports = dataRequest;
