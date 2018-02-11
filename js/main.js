@@ -3,9 +3,7 @@
 console.log("main js is in the house");
 
 let CryptonymModule = require("./cryptonym");
-let backgroundColor = require("./backgroundcolor");
-let fontSize = require("./fontsize");
-let clearButton = require("./clearbutton");
+
 
 //*/
 
