@@ -46,4 +46,4 @@ function removeElement(parentDiv, childDiv) {
 //     }
 // }
 
-module.exports = {removeElement};
+module.exports = removeElement;
