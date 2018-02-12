@@ -15,18 +15,10 @@ function removeElement(parentDiv, childDiv) {
     }
 }
 
-// console.log("Hello");
-// // function removeDummy () {
-// //     var elem = document.getElementById("myDiv");
-// //     elem.parentNode.removeChild(elem);   
-// //     return false;
-// // };
-// var btn = document.getElementById('btn');
-// console.log(btn);
-// btn.onclick = function myButton() {
-//     document.getElementById('txt').remove();
-//     this.remove();
-// };
+// function removeElement() {
+//     document.getElementById("newOutputMsg").innerHTML = "";
+    
+// }
 
 
 // !!! WORKING CODE !!!
